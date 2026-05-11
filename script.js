@@ -31,7 +31,6 @@ function pushButton(){
     if (pushValue !== ''){
     array.push(pushValue);
     document.querySelector("#pushTextBox").value = '';
-    //document.querySelector("#arrayElements").textContent = array;
     displayArray();
     } else{
         alert("Please enter a value.");
@@ -42,7 +41,6 @@ function popButton(){
     if(array.length === 0){ alert("Array is Empty"); return;}
     else{
     array.pop();
-    //document.querySelector("#arrayElements").textContent = array;
     displayArray();}
 }
 //Shift
@@ -50,7 +48,6 @@ function shiftButton(){
     if(array.length === 0){alert("Array is Empty"); return;}
     else{
     array.shift();
-    //document.querySelector("#arrayElements").textContent = array;
     displayArray();}
 }
 //Unshift
@@ -59,7 +56,6 @@ function unshiftButton(){
     if (unshiftValue !== ''){
         array.unshift(unshiftValue);
         document.querySelector("#unshiftTextBox").value = '';
-        //document.querySelector("#arrayElements").textContent = array;
         displayArray();
     } else {
         alert("Please enter a value.");
@@ -77,7 +73,6 @@ function spliceButton(){
     document.querySelector("#spliceStartPosition").value = '';
     document.querySelector("#spliceDeleteCount").value = '';
     document.querySelector("#spliceTextInput").value = '';
-    //document.querySelector("#arrayElements").textContent = array;
     displayArray()}}
 }}
 
@@ -91,7 +86,6 @@ function spliceBoxNoValueAddition(){
     array.splice(spliceStartValue,spliceDeleteCountValue);
     document.querySelector("#spliceStartPositionNoAddition").value = '';
     document.querySelector("#spliceDeleteCountNoAddition").value = '';
-    //document.querySelector("#arrayElements").textContent = array;
     displayArray()}}
 }
 
@@ -103,7 +97,6 @@ function spliceBoxOnlyStartValue(){
     else{
     array.splice(spliceStartValue);
     document.querySelector("#spliceStartPositionOnlyStartValue").value = '';
-    //document.querySelector("#arrayElements").textContent = array;
     displayArray()}}
 }
 
@@ -115,8 +108,5 @@ function displayArray(){
     const indexP = document.createElement("p");//Creates paragraph for each element
     indexP.textContent = "Element " + index + ": " + element; //Set the text of the p to the element
     arrayList.appendChild(indexP);
-    //const elementP = document.createElement("p");
-    //elementP.textContent = element;
-    //indexP.appendChild(elementP);
     });
 }
