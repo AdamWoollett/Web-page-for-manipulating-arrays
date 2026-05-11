@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Manipulating Arrays</title>
+</head>
+<body>
+    <div id="listDiv">
+        <h1>Below is the contents of the array:</h1>
+            <div id="arrayElements"></div>
+    </div>
+    <section>
+        <div id="fourSimpleButtonsGrid">
+            <div>
+                <h2>Add an element to the end via push:</h2>
+                <input type="text" id="pushTextBox">
+                <button id="pushButton">Push Method</button>
+            </div>
+
+            <div>
+                <h2>Remove last element via pop:</h2>
+                <button id="popButton">Pop Method</button>
+            </div>
+
+            <div>
+                <h2>Remove first element via shift:</h2>
+                <button id="shiftButton">Shift Method</button>
+            </div>
+
+            <div>
+                <h2>Add an element to the start via unshift:</h2>
+                <input type="text" id="unshiftTextBox">
+                <button id="unshiftButton">Unshift Method</button>
+            </div>
+        </div>
+    <div id="spliceBoxContainer">
+        <div id="spliceBox">
+            <h2>Splice values into the array:</h2>
+            <p>Specify start position in the array:</p>
+            <input type="number" id="spliceStartPosition">
+            <p>Specify how many items to delete:</p>
+            <input type="number" id="spliceDeleteCount">
+            <p>Specify item to add to the array:</p>
+            <input type="text" id="spliceTextInput"><br><br>
+            <button id="spliceButton">Submit splice parameters</button>
+        </div>
+        <div id="spliceBoxNoValueAddition">
+            <h2>Remove specififc array values:</h2>
+            <p>Specify start position in the array:</p>
+            <input type="number" id="spliceStartPositionNoAddition">
+            <p>Specify how many items to delete:</p>
+            <input type="number" id="spliceDeleteCountNoAddition"><br><br>
+            <button id="spliceButtonNoValueAddition">Submit splice parameters</button>
+        </div>
+        <div id="spliceBoxOnlyStartValue">
+            <h2>Clear array after a certain position:</h2>
+            <p>Specify start position in the array:</p>
+            <input type="number" id="spliceStartPositionOnlyStartValue"><br><br>
+            <button id="spliceButtonOnlyStartValue">Submit splice parameters</button>
+        </div>
+    </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
